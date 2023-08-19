@@ -1,0 +1,11 @@
+.documentationWrapper {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+@media(max-width:800px) {
+    .documentationWrapper {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

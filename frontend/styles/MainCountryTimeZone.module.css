@@ -1,0 +1,108 @@
+.homeMainCountryInfo {
+    width: 25%;
+}
+
+.homeMainTimeLi {
+    position: relative;
+    border-top: 1px solid var(--secondary-color);
+    border-bottom: 1px solid var(--secondary-color);
+    /* flex-grow: 1; */
+    flex-shrink: 0;
+    flex-basis: 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+}
+
+.homeMainTimeLi:first-child {
+    border-left: 1px solid var(--secondary-color);
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.homeMainTimeLi:last-child {
+    border-right: 1px solid var(--secondary-color);
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+}
+
+.homeMainTimeLiDay {
+    position: absolute;
+    top: -1rem;
+    color: var(--text-color);
+}
+
+.homeMainTimeLiAmPm {
+    bottom: 0;
+}
+
+.homeMainTZAbbr {
+    background-color: var(--yellow-color);
+}
+
+.homeMainTimeHour {
+    margin-bottom: 0.3rem;
+}
+
+.homeMainCountryInfoTimeDiff {
+    display: inline-block;
+    text-align: center;
+    width: 2rem;
+}
+
+.homeMainHomeIcon {
+    position: absolute;
+    top: 0.35rem;
+    left: 0.6rem;
+}
+
+.homeMainDayInfo {
+    background-color: var(--pink-color);
+    color: #fff;
+}
+
+.homeMainDangerHours {
+    background-color: var(--pink-color);
+    opacity: 0.7;
+    color: #fff;
+}
+
+.homeMainOddHours {
+    background-color: var(--secondary-color);
+}
+
+.homeMainRightBorderRound {
+    border-top-right-radius: 0.4rem;
+    border-bottom-right-radius: 0.4rem;
+    margin-right: 1px;
+    flex-basis: calc(2rem - 1px);
+}
+
+.homeMainLeftBorderRound {
+    border-top-left-radius: 0.4rem;
+    border-bottom-left-radius: 0.4rem;
+}
+
+.homeMainDSTHour {
+    background-color: red;
+}
+
+.homeMainCountryInfoDeleteIcon {
+    top: -1.2rem;
+    left: 0;
+    z-index: 9;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.homeMainCountryInfoHomeIcon {
+    top: -1.2rem;
+    left: 1rem;
+    z-index: 9;
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.homeMainCountryInfoDeleteIcon:hover,
+.homeMainCountryInfoHomeIcon:hover {
+    opacity: 1;
+}

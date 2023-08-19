@@ -1,0 +1,18 @@
+.homeMainUserSection {
+    border-bottom: 1px solid var(--secondary-color);
+    position: relative;
+}
+
+.homeMainUserEmail {
+    width: 25%;
+}
+
+.homeMainUserScheduleLi {
+    border-left: 1px solid var(--secondary-color);
+    flex-shrink: 0;
+    flex-basis: 2rem;
+}
+
+.homeMainUserScheduleLi:last-child {
+    border-right: 1px solid var(--secondary-color);
+}

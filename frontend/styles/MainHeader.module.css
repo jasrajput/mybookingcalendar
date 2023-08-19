@@ -1,0 +1,26 @@
+.homeMainHeader {
+    border-bottom: 1px solid var(--secondary-color);
+}
+
+.homeMainHeaderSearchWrapper {
+    width: 25%;
+}
+
+.homeMainHeaderSearch {
+    border: 1px solid var(--secondary-color);
+    color: var(--text-color);
+    font-weight: 500;
+    width: 100%;
+}
+
+.homeMainHeaderSearch:focus {
+    outline: none;
+}
+
+.homeMainHeaderCalendar {
+    cursor: pointer;
+}
+
+.homeMainHeaderTimeFormat {
+    width: 2rem;
+}

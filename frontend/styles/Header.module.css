@@ -1,0 +1,44 @@
+.navHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 2px solid var(--secondary-color);
+}
+
+.navLogo {
+    width: 10rem;
+}
+
+.navWrapper {
+    flex: 1;
+}
+
+.navUl {
+    gap: 1rem;
+}
+
+.headerMoreNavItems:hover {
+    background-color: var(--primary-color);
+}
+
+@media(max-width: 800px) {
+    .navUl {
+        font-size: 0.9rem;
+    }
+
+    .navHeaderLogin {
+        font-size: 0.9rem;
+    }
+}
+
+@media(max-width:768px) {
+    .navWrapper {
+        display: none;
+    }
+}
+
+@media(max-width:768px) {
+    .navHeaderLogin {
+        display: none;
+    }
+}

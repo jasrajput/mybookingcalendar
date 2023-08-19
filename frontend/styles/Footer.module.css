@@ -1,0 +1,19 @@
+.footerWrapper {
+    border-top: 1px solid var(--secondary-color);
+}
+
+.footerDiv {
+    margin-bottom: 0.3rem;
+}
+
+@media(max-width:500px) {
+    .footerDiv {
+        margin-bottom: 1rem;
+    }
+}
+
+@media(max-width:320px) {
+    .footerWrapper {
+        font-size: 0.9rem;
+    }
+}

@@ -1,0 +1,163 @@
+.newEventFormContainer {
+  width: 50rem;
+  max-width: 100%;
+}
+
+.selectWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem;
+  border: 1px solid #dadce0;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.newEventLocationError {
+  position: absolute;
+  bottom: -1.5rem;
+  left: 0;
+  color: var(--pink-color);
+  cursor: default;
+  pointer-events: none;
+}
+
+.selectOptionsUl {
+  position: absolute;
+  top: 3.5rem;
+  left: 0;
+  width: 100%;
+  visibility: hidden;
+  z-index: 10;
+}
+
+.selectOptionsLi {
+  padding: 1rem;
+  cursor: pointer;
+  border: 1px solid #dadce0;
+  background-color: #fff;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
+}
+
+.selectOptionsLi:hover {
+  background-color: var(--secondary-color);
+}
+
+.selectOptionsLi svg {
+  height: 1.5rem;
+  width: auto;
+}
+
+.eventSubmitBtn {
+  background-color: var(--secondary-color);
+  color: var(--text-lignt);
+}
+
+.newEventMeetingTimeWrapper {
+  border: 1px solid var(--secondary-color);
+  padding-bottom: 0;
+}
+
+.newEventMeetingTimeDay {
+  font-weight: 500;
+  width: 2.5rem;
+}
+
+.newEventMeetingTimeDayWrapper {
+  position: relative;
+  border-bottom: 1px solid var(--secondary-color);
+}
+
+.newEventMeetingTimeDayWrapper:last-of-type {
+  margin-bottom: 0;
+  border-bottom: 0;
+}
+
+.meetingTimeDeleteBtnWrapper,
+.meetingTimeAddBtnWrapper {
+  cursor: pointer;
+}
+
+.newEventMeetingTime {
+  position: relative;
+  border: 1px solid var(--secondary-color);
+  padding: 0.8rem 1.6rem;
+  width: 8rem;
+  text-align: center;
+  cursor: pointer;
+}
+
+.newEventMeetingTimeUl {
+  border: 1px solid #dadce0;
+  position: absolute;
+  top: 3.25rem;
+  left: 0;
+  height: 10rem;
+  width: 110%;
+  background-color: #fff;
+  overflow: auto;
+  box-shadow: 0px 5px 10px 0px rgb(0 0 0 / 10%);
+  visibility: hidden;
+  z-index: 10;
+}
+
+.newEventMeetingTimeLi {
+  padding-left: 1rem;
+}
+
+.newEventMeetingTimeLi:hover {
+  background-color: var(--secondary-color);
+}
+
+.newEventFilteredTeamLi:hover {
+  background-color: var(--primary-color);
+}
+
+@media (max-width: 700px) {
+  .newEventLocationError {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .newEventLocationError {
+    font-size: 0.7rem;
+    bottom: -2.2rem;
+  }
+}
+
+@media (max-width: 315px) {
+  .newEventLocationError {
+    font-size: 0.6rem;
+    bottom: -2rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .newEventMeetingTimeDayWrapper {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .newEventMeetingTimeDay,
+  .newEventMeetingTime,
+  .meetingTimeHyphen {
+    margin-right: 0;
+  }
+
+  .meetingTimeHeading {
+    text-align: center;
+  }
+}
+
+.select {
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #dadce0;
+  font-size: 1rem;
+  font-family: inherit;
+  color: #7e7171;
+  /* margin-bottom: 2rem; */
+}

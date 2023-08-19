@@ -1,0 +1,12 @@
+.mainNavActive {
+    background-color: var(--secondary-color);
+}
+
+.mainNavLi {
+    transition: background-color 0.15s linear;
+    min-width: 2rem;
+}
+
+.mainNavLi:hover {
+    background-color: var(--secondary-color);
+}

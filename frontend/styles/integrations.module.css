@@ -1,0 +1,64 @@
+.integrationsWrapper {
+    min-height: 75vh;
+}
+
+
+.integrationsServices {
+    background-color: #fff;
+    border: 1px solid var(--secondary-color);
+    flex-wrap: wrap;
+}
+
+.integrationsConnectBtn {
+    border: 1px solid var(--secondary-color);
+    border-radius: 2rem;
+    padding: 0.7rem 1.4rem;
+    font-family: inherit;
+    outline: none;
+    background-color: #fff;
+    color: var(--text-color);
+}
+
+.integrationsConnectBtn:focus {
+    outline: none;
+}
+
+.integrationsConnectBtn:hover {
+    background-color: var(--secondary-color);
+}
+
+.integrationsConnectBtn:disabled {
+    cursor: default;
+    background-color: var(--secondary-color);
+}
+
+@media(max-width: 680px) {
+    .integrationsLogoWrapper {
+        margin-right: 2rem;
+    }
+
+    .integrationsMeta {
+        font-size: 0.9rem;
+    }
+
+    .integrationsServices {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+@media(max-width: 590px) {
+    .integrationsServices {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+
+    .integrationsLogoWrapper {
+        margin-right: 0;
+    }
+
+    .integrationsConnectBtn {
+        margin-right: 0;
+    }
+}

@@ -1,0 +1,21 @@
+.table {
+  border: 2px solid #000;
+  width: 100%;
+  height: 100px;
+  justify-content: center;
+  flex: 1;
+}
+
+.th > th {
+  border-bottom: 1px solid black;
+}
+
+.td > td {
+  text-align: center;
+}
+
+@media (max-width: 500px) {
+  .td > td {
+    padding: 20px;
+  }
+}

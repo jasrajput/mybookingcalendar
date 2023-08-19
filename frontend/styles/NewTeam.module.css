@@ -1,0 +1,25 @@
+.newTeamFormContainer {
+    width: max(40%, 25rem);
+    max-width: 100%;
+}
+
+.newTeamInput {
+    border: 1px solid var(--secondary-color);
+    font: inherit;
+}
+
+.newTeamInput:focus {
+    outline: 2px solid var(--green-color);
+}
+
+.newTeamInput::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+.newTeamInput:invalid {
+    outline: 2px solid var(--pink-color);
+}
+
+.newTeamFilteredListWrapper:hover {
+    background-color: var(--primary-color) !important;
+}

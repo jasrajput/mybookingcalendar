@@ -1,0 +1,779 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+:root {
+  --primary-color: #f6f8f8;
+  --secondary-color: #dde5e5;
+  --text-color: #667172;
+  --yellow-color: #fbd950;
+  --pink-color: #df8383;
+  --green-color: #4db5aa;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+}
+
+/* general styles */
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: 70rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+ul{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+ol {
+  list-style: decimal inside;
+}
+
+/* utility classes */
+.p-05 {
+  padding: 0.5rem;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.pt-2 {
+  padding-top: 2rem;
+}
+
+.pl-1 {
+  padding-left: 1rem;
+}
+
+.pr-1 {
+  padding-right: 1rem;
+}
+
+.pr-2 {
+  padding-right: 2rem;
+}
+
+.px-03 {
+  padding-left: 0.3rem;
+  padding-right: 0.3rem;
+}
+
+.px-2 {
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
+.px-5 {
+  padding-left: 5rem;
+  padding-right: 5rem;
+}
+
+.px-15 {
+  padding-left: 15rem;
+  padding-right: 15rem;
+}
+
+.py-1 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-2 {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.py-01 {
+  padding-top: 0.1rem;
+  padding-bottom: 0.1rem;
+}
+
+.py-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.pb-05 {
+  padding-bottom: 0.5rem;
+}
+
+.pb-1 {
+  padding-bottom: 1rem;
+}
+
+.pb-10 {
+  padding-bottom: 10rem;
+}
+
+.m-1 {
+  margin: 1rem;
+}
+
+.ml-03 {
+  margin-left: 0.3rem;
+}
+
+.ml-1 {
+  margin-left: 1rem;
+}
+
+.mr-02 {
+  margin-right: 0.2rem;
+}
+
+.mr-05 {
+  margin-right: 0.5rem;
+}
+
+.mr-1 {
+  margin-right: 1rem;
+}
+
+.mr-2 {
+  margin-right: 2rem;
+}
+
+.mr-4 {
+  margin-right: 4rem;
+}
+
+.mt-1 {
+  margin-top: 1rem;
+}
+
+.mt-3 {
+  margin-top: 3rem;
+}
+
+.mt-5 {
+  margin-top: 5rem;
+}
+
+.mb-03 {
+  margin-bottom: 0.3rem;
+}
+
+.mb-05 {
+  margin-bottom: 0.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 1rem;
+}
+
+.mb-2 {
+  margin-bottom: 2rem;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+.my-3 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.my-1 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.mx-1 {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.ml-auto {
+  margin-left: auto;
+}
+
+.w-50 {
+  width: 50%;
+}
+
+.w-40 {
+  width: 40%;
+}
+
+.fw-500 {
+  font-weight: 500;
+}
+
+.text-small1 {
+  font-size: 0.3rem;
+}
+
+.text-small2 {
+  font-size: 0.5rem;
+}
+
+.text-small3 {
+  font-size: 0.7rem;
+}
+
+.text-small4 {
+  font-size: 0.9rem;
+}
+
+.text-light {
+  color: rgba(0,0,0,0.5) !important;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.rounded {
+  border-radius: 0.4rem;
+}
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.p-absolute {
+  position: absolute;
+}
+
+.p-relative {
+  position: relative;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.d-block {
+  display: block;
+}
+
+.d-inline-block {
+  display: inline-block;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.justify-around {
+  justify-content: space-around;
+}
+
+.justify-evenly {
+  justify-content: space-evenly;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.flex-1 {
+  flex: 1;
+}
+
+.c-pointer {
+  cursor: pointer;
+}
+
+.shadow {
+  box-shadow: 0px 7px 20px 1px rgb(0 0 0 / 10%);
+}
+
+/* DOM manipulations */
+.homeMainHeaderTimeSwitch {
+  background-color: var(--secondary-color);
+  position: relative;
+  height: 1.3rem;
+  width: 3rem;
+  font-size: 0.9rem;
+  padding: 0.3rem;
+  border-top-left-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  cursor: pointer;
+}
+
+.homeMainHeaderTimeSwitchBall {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 1.5rem;
+  width: 1.5rem;
+  border-radius: 50%;
+  background-color: var(--green-color);
+  font-size: 0.8rem;
+}
+
+.homeMainHeaderTimeSwitch.active .homeMainHeaderTimeSwitchBall {
+  right: 0;
+  left: auto;
+}
+
+/* debugging classes */
+.test-border {
+  border: 1px solid red;
+}
+
+/* time window */
+.homeMainWindow {
+  border: 2px solid var(--green-color);
+  height: 100%;
+  width: 2rem;
+  z-index: 10;
+  transition: all 0.1s ease-out;
+}
+
+/* react-calendar styling */
+.react-calendar-wrapper {
+  display: flex;
+  visibility: hidden;
+  align-items: center;
+  justify-content: center ;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100vh;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 11;
+  cursor: initial;
+  opacity: 0;
+  transition: all .15s linear;
+}
+
+.react-calendar-wrapper.calendarActive {
+  visibility: visible;
+  opacity: 1;
+}
+
+.react-calendar {
+  position: absolute;
+  border-radius: 0.4rem;
+  border: 1px solid var(--secondary-color) !important;
+  padding: 0.5rem;
+  box-shadow: 0px 7px 20px 1px rgb(0 0 0 / 10%);
+  font-family: inherit !important;
+  z-index: 12;
+}
+
+.react-calendar__navigation {
+  margin-bottom: 0.6rem !important;
+}
+
+.react-calendar__navigation__arrow {
+  color: var(--text-color);
+  font-family: inherit;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+.react-calendar__navigation__label {
+  color: var(--text-color);
+  font-family: inherit;
+  font-weight: 500;
+}
+
+.react-calendar__month-view__weekdays {
+  background-color: var(--primary-color);
+  margin-bottom: 0.4rem;
+}
+
+.react-calendar__month-view__weekdays__weekday {
+  font-weight: 600;
+}
+
+.react-calendar__month-view__weekdays__weekday abbr{
+  text-decoration: none;
+}
+
+.react-calendar__tile {
+  color: var(--green-color);
+  font-family: inherit;
+}
+
+.react-calendar__tile.react-calendar__tile--hasActive {
+  color: white !important;
+}
+
+.react-calendar__tile.react-calendar__tile--active {
+  color: white !important;
+}
+
+.react-calendar__month-view__days__day--weekend {
+  color: var(--pink-color) !important;
+}
+
+.react-calendar__tile--active {
+  background-color: var(--green-color) !important;
+}
+
+.react-calendar__tile:disabled:not(.react-calendar__tile.react-calendar__tile--active) {
+  color: #999999 !important;
+}
+
+/* ****** TOAST MESSAGE ****** */
+#toastContainer{
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 6rem;
+  left: 2rem;
+  width: auto;
+  margin-right: 2rem;
+  line-height: 1.5rem;
+  z-index: 10;
+}
+
+.toast{
+  /* border: 2px solid green; */
+  padding: 1rem 1.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  animation: fade-in .3s ease, fade-out .3s ease 3.8s;
+}
+
+@keyframes fade-in {
+  from { opacity: 0 }
+}
+@keyframes fade-out {
+  to { opacity: 0 }
+}
+
+.toast.error{
+  color: rgb(241, 66, 66);
+}
+
+.toast.success{
+  color: rgb(43, 173, 43);
+}
+
+.toast.info{
+  color: var(--text-color);
+}
+
+/* ***** ANIMATED PLACEHOLDER TEXT ****** */
+
+.animate_bg{
+  background-image: linear-gradient(to right, #f6f7f8 0%, #edeef1 10%, #f6f7f8 20%, #f6f7f8 100%);
+  background-size: 200% 100%;
+  animation: bgPos 1s linear infinite;
+  cursor: default;
+}
+
+.animate_bg_text{
+  display: inline-block;
+  width: 100%;
+  height: 15px;
+  margin-bottom: 15px;
+  border-radius: 50px;
+}
+
+h2.animate_bg_text{
+  width: 70%;
+}
+
+h1.animate_bg_text{
+  width: 50%;
+}
+
+.animate_bg_text:last-child{
+  width: 30%;
+}
+
+@keyframes bgPos{
+  0%{
+      background-position: 50% 0;
+  }
+  100%{
+      background-position: -150% 0;
+  }
+}
+
+/* LOGIN FORM CONTAINER ************************************************************************************** */
+
+.loginForm_wrapper{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+
+.loginForm_container{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  width: 30rem;
+  border-radius: 8px;
+  border: 1px solid #dadce0;
+  background-color: #fff;
+}
+
+.loginForm_container h1{
+  align-self: center;
+  margin-bottom: 1.5rem;
+}
+
+.loginForm_container a{
+  font-weight: 700;
+}
+
+.loginForm_container a:hover{
+  color: #1a1a1a;
+}
+
+.loginForm_container input{
+  padding: 1rem;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #dadce0;
+  font-size: 1rem;
+  font-family: inherit;
+  margin-bottom: 2rem;
+}
+
+.loginForm_container textarea {
+  display: block;
+  resize: none;
+  width: 100%;
+  height: 7rem;
+  padding: 1rem;
+  border-radius: 5px;
+  border: 1px solid #dadce0;
+  margin-bottom: 2rem;
+  font-size: 1rem;
+  font-family: inherit;
+}
+
+.loginForm_container textarea:focus {
+  outline: none;
+}
+
+.loginForm_container textarea::placeholder {
+  font-family: 'Poppins', sans-serif;
+}
+
+.loginForm_container input:focus{
+  outline: 2px solid var(--primary-color);
+}
+
+.loginForm_container input[type="submit"]{
+  margin: 1rem 0;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.loginForm_container input[type="submit"]:focus{
+  outline: none;
+}
+
+.loginForm_container input[type="submit"]:disabled{
+  cursor: default;
+}
+
+.loginForm_container form{
+  margin-bottom: 1rem;
+}
+
+.loginFormHr{
+  margin-bottom: 2rem;
+  border: 1px;
+  height: 1px;
+  background-color: var(--secondary-color);
+}
+
+.googleLoginBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  width: 100%;
+  border-radius: 0.313rem;
+  outline: none;
+  border: none;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
+
+.googleLoginBtn > svg{
+  height: 1.125rem;
+  width: 1.125rem;
+  margin-right: 1rem;
+}
+
+/* ***** EVENT MARKER FOR USER SCHEDULE SECTION ***** */
+.eventMark {
+  position: absolute;
+  top: 1rem;
+  height: calc(70% - 1rem);
+  background-color: var(--green-color);
+  overflow: hidden;
+  color: #fff;
+  cursor: default;
+  border-radius: 0.25rem;
+}
+
+/* ****** NEW-EVENT LOCATION LIST ******* */
+.selectOptionUlShow {
+  visibility: visible !important;
+}
+
+.meetingTimeWrapper {
+  cursor: pointer;
+}
+
+.meetingTimeError {
+  color: var(--pink-color);
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  visibility: hidden;
+}
+
+.meetingTimeError.show {
+  visibility: visible;
+}
+
+.bookEventTimeLiHover:hover {
+  color: #fff !important;
+  background-color: var(--green-color) !important;
+}
+
+.newEventMeetingTimeLiActive {
+  background-color: var(--secondary-color);
+}
+
+/* HAMBURGER MENU *************************************************************************************** */
+.hamburger-menu-container{
+  /* border: 2px solid red; */
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.96);
+  z-index: 100;
+  display: none;
+}
+
+.hamburger-menu-container.show{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hamburger-menu-container > .hamburger-menu-button{
+  position: absolute;
+  display: block;
+  top: 2rem;
+  left: 1rem;
+}
+
+.hamburger-menu-container .menu-items{
+  /* border: 2px solid green; */
+  width: 90%;
+  text-align: center;
+}
+
+.hamburger-menu-container .menu-items ul{
+  /* border: 2px solid pink; */
+  list-style: none;
+}
+
+.hamburger-menu-container .menu-items ul li{
+  /* border: 2px solid green; */
+  width: 100%;
+}
+
+.hamburger-menu-container .menu-items ul li a{
+  text-decoration: none;
+  padding: 1rem;
+  display: inline-block;
+  width: 100%;
+  color: var(--nav-bg);
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+
+.hamburger-menu-container .menu-items ul li a:hover{
+  color: var(--primary-color);
+}
+
+.hamburger-menu-button{
+  /* border: 2px solid red; */
+  position: absolute;
+  right: 1rem;
+  display: none;
+  /* height: 100%; */
+  cursor: pointer;
+}
+
+@media(max-width:768px) {
+  .hamburger-menu-button{
+    display: flex;
+    align-items: center;
+  }
+}
+
+/* SCHEDULED EVENTS *************************************************************************** */
+.scheduledEventsActive {
+  color: var(--text-color);
+}
+
+.scheduledEventsActive > span {
+  visibility: visible !important;
+}
+
+.scheduledEventsDetailsShow {
+  display: flex !important;
+}
+
+.scheduledEventsDetailsBtnShow {
+  visibility: visible !important;
+}
+
+/* NEW TEAM ************************************************************************************************* */
+.priorityActive {
+  transition: all 0.15s ease;
+  background-color: var(--green-color) !important;
+  color: #fff !important;
+}

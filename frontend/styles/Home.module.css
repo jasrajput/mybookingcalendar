@@ -1,0 +1,22 @@
+.homeMainWrapper {
+    position: relative;
+    background-color: #fff;
+    box-shadow: 0px 7px 20px 1px rgba(0,0,0,0.1);
+    min-width: 1120px;
+}
+
+.homeMainTimeLineSection {
+    overflow: auto;
+}
+
+.indexContainer {
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+@media(max-width:800px) {
+    .indexContainer {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}

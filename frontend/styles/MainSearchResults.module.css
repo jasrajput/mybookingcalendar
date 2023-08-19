@@ -1,0 +1,20 @@
+.mainSearchResultsWrapper {
+    border: 1px solid var(--secondary-color);
+    top: 3.4rem;
+    left: 1rem;
+    width: 25%;
+    max-height: 10.4rem;
+    overflow: auto;
+    box-shadow: 0px 7px 20px 1px rgba(0,0,0,0.1);
+    background-color: var(--primary-color);
+    z-index: 10;
+}
+
+.mainSearchResultsh6 {
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.mainSearchResultsDiv:hover {
+    background-color: var(--secondary-color);
+}
